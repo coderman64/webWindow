@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, 
+    user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0" />
+        <title>WebWind test</title>
+        <style>
+            body {
+                overflow: hidden;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id = "test1">
+            <p>this is a test for testing purposes
+        </div>
+        <div id = "test2">
+            <a href = "google.com">google</a>
+            <p>well, what do you know? a link in a window!
+        </div>
+        <div id = "test3">
+            <p>this is a third and final test. I feel pretty good about it...</p>
+            <img src="test.png"/>
+        </div>
+        <button id="testButton">button!</button>
+        <video id="testVideo" width="500" src="http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4" controls></video>
+        <iframe src="http://duckduckgo.com/html" id="testIFrame" width = 600 height=500 style="overflow: scroll;"></iframe>
+        <script src="webWindow.js"></script>
+        <script>
+        var test = document.getElementById("test1");
+        newWindObj(test,"this is a test");
+        var test2 = document.getElementById("test2");
+        newWindObj(test2, "this is another test");
+        var test3 = document.getElementById("test3");
+        newWindObj(test3, "this is the final test");
+        var button = document.getElementById("testButton");
+        newWindObj(button, "this is a window with just a button");
+        var video = document.getElementById("testVideo");
+        newWindObj(video, "HTML5 Media Player");
+        var iframe = document.getElementById("testIFrame");
+        newWindObj(iframe, "duckduckgo in a window");
+        </script>
+    </body>
+</html>
