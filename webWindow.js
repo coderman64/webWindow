@@ -58,6 +58,9 @@ function webWind(container, windowTitle){
             this.windDiv.style.top = (evt.clientY-this.relativeLoc.y).toString()+"px";
         }
     };
+    this.TouchStart1 = function(evt){
+        evt.preventDefault();
+    }
 };
 
 function newWindObj(cont, windTitle){
